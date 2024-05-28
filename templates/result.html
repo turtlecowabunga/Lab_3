@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Результат</title>
+</head>
+<body>
+    <h1>Результат</h1>
+    {% if result == "Данное уравнение не квадратное." %}
+        <p>{{ result }}</p>
+    {% else %}
+        <p>Корни уравнения: x<sub>1</sub> = {{ result[0] }}; x<sub>2</sub> = {{ result[1] }}</p>
+    {% endif %}
+</body>
+</html>
